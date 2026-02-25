@@ -36,11 +36,12 @@ The extension intercepts Twitter's own API responses as they stream in, extracti
 
 This is an unpacked Chrome extension. It works in Chrome, Chromium, and any Chromium fork (Brave, Arc, Helium, etc.).
 
-1. Clone or download this repo
-2. Open `chrome://extensions` in your browser
-3. Enable **Developer mode** (top-right toggle)
-4. Click **Load unpacked**
-5. Select the `tweet-video-dl` folder
+1. **Download** this repo: click the green **Code** button above, then **Download ZIP**
+2. **Unzip** the downloaded file somewhere permanent (e.g. your Documents folder)
+3. Open `chrome://extensions` in your browser
+4. Enable **Developer mode** (top-right toggle)
+5. Click **Load unpacked**
+6. Select the unzipped `tweet-video-dl-main` folder
 
 ## Usage
 
