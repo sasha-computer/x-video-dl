@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 300px;
+      padding: 16px;
+      background: #15202b;
+      color: #e7e9ea;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    label {
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #8b98a5;
+    }
+    input {
+      width: 100%;
+      padding: 8px 10px;
+      background: #273340;
+      border: 1px solid #3e4d5b;
+      border-radius: 4px;
+      color: #e7e9ea;
+      font-size: 14px;
+      outline: none;
+    }
+    input:focus { border-color: #1d9bf0; }
+    .helper {
+      font-size: 12px;
+      color: #8b98a5;
+      margin-top: 4px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      padding: 8px;
+      background: #1d9bf0;
+      color: #fff;
+      border: none;
+      border-radius: 9999px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { background: #1a8cd8; }
+    #status {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 13px;
+      color: #00ba7c;
+      min-height: 18px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tweet Video Downloader</h1>
+  <label for="folder">Download folder</label>
+  <input type="text" id="folder" placeholder="TweetVideos">
+  <p class="helper">Subfolder within your Downloads directory</p>
+  <button id="save">Save</button>
+  <p id="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

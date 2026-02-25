@@ -1,0 +1,131 @@
+/* ── Download Button ── */
+.tvd-download-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+  transition: background 0.15s ease;
+}
+
+.tvd-download-btn:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.tvd-download-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+  pointer-events: none;
+}
+
+/* ── Quality Picker ── */
+.tvd-quality-picker {
+  position: absolute;
+  right: 0;
+  z-index: 20;
+  background: #1a1a2e;
+  border-radius: 8px;
+  padding: 4px 0;
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.tvd-quality-picker--above {
+  bottom: 44px;
+}
+
+.tvd-quality-picker--below {
+  top: 44px;
+}
+
+.tvd-quality-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  cursor: pointer;
+  transition: background 0.1s ease;
+  white-space: nowrap;
+  gap: 12px;
+}
+
+.tvd-quality-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.tvd-quality-label {
+  font-weight: 600;
+}
+
+.tvd-quality-bitrate {
+  opacity: 0.55;
+  font-size: 11px;
+}
+
+/* ── Toast ── */
+.tvd-toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1a1a2e;
+  color: #fff;
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 13px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  z-index: 100000;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.tvd-toast--fade {
+  opacity: 0;
+}
+
+/* ── Light Mode Overrides ── */
+@media (prefers-color-scheme: light) {
+  .tvd-download-btn {
+    background: rgba(255, 255, 255, 0.75);
+  }
+
+  .tvd-download-btn:hover {
+    background: rgba(255, 255, 255, 0.95);
+  }
+
+  .tvd-download-btn svg {
+    fill: #0f1419;
+  }
+
+  .tvd-quality-picker {
+    background: #fff;
+    color: #0f1419;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  .tvd-quality-option:hover {
+    background: rgba(0, 0, 0, 0.06);
+  }
+
+  .tvd-toast {
+    background: #fff;
+    color: #0f1419;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+}
