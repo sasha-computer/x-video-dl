@@ -1,6 +1,6 @@
 /** @file background.js — Service worker for X Video Downloader (MV3) */
 
-const DEFAULT_FOLDER = 'XVideos';
+const DEFAULT_FOLDER = 'x-video-dl';
 
 /**
  * Sanitize folder name: keep alphanumeric, hyphens, underscores, spaces, slashes.

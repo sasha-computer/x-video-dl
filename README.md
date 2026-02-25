@@ -50,7 +50,7 @@ This is an unpacked Chrome extension. It works in Chrome, Chromium, and any Chro
 3. Click it to see available quality options
 4. Pick a resolution and the video downloads immediately
 
-**Configure the download folder** by clicking the extension icon in your toolbar. The folder is relative to your browser's default Downloads directory (default: `XVideos`).
+**Configure the download folder** by clicking the extension icon in your toolbar. The folder is relative to your browser's default Downloads directory (default: `x-video-dl`).
 
 **Tip:** If the quality picker says "No video data captured yet," scroll past the post and back, or refresh the page. The extension needs to see X's API response to capture the video URLs.
 

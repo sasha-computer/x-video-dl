@@ -1,4 +1,4 @@
-const DEFAULT_FOLDER = 'XVideos';
+const DEFAULT_FOLDER = 'x-video-dl';
 
 function sanitize(raw) {
   let val = raw.trim();
