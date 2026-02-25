@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Tweet Video Downloader",
+  "name": "X Video Downloader",
   "version": "1.0.0",
-  "description": "Download videos from tweets with quality selection",
+  "description": "Download videos from X/Twitter with quality selection",
   "permissions": [
     "downloads",
     "storage"

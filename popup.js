@@ -1,4 +1,4 @@
-const DEFAULT_FOLDER = 'TweetVideos';
+const DEFAULT_FOLDER = 'XVideos';
 
 function sanitize(raw) {
   let val = raw.trim();

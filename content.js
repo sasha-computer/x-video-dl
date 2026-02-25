@@ -1,5 +1,5 @@
 /* ════════════════════════════════════════════════════════
-   Tweet Video Downloader — Content Script (ISOLATED world)
+   X Video Downloader — Content Script (ISOLATED world)
    ════════════════════════════════════════════════════════ */
 
 (() => {
@@ -137,7 +137,7 @@
 
   // ── Trigger download via background ──
   async function downloadVariant(variant, tweetId) {
-    const filename = `tweet_${tweetId}_${variant.resolution}.mp4`;
+    const filename = `x_${tweetId}_${variant.resolution}.mp4`;
     try {
       const resp = await chrome.runtime.sendMessage({
         action: 'download',

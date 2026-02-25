@@ -1,6 +1,6 @@
-/** @file background.js — Service worker for Tweet Video Downloader (MV3) */
+/** @file background.js — Service worker for X Video Downloader (MV3) */
 
-const DEFAULT_FOLDER = 'TweetVideos';
+const DEFAULT_FOLDER = 'XVideos';
 
 /**
  * Sanitize folder name: keep alphanumeric, hyphens, underscores, spaces, slashes.
